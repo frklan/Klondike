@@ -59,7 +59,7 @@ if (workbox) {
   },
   {
     "url": "js/bundle.js",
-    "revision": "10ea338cf761aecee9de6ece9226ec65"
+    "revision": "053255a2c558c7c46c538a8bfc9c7cb0"
   },
   {
     "url": "js/init.js",
