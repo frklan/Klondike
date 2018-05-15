@@ -43,7 +43,7 @@ if (workbox) {
   },
   {
     "url": "help.html",
-    "revision": "cf07c1b3d852718c9dd1e2b2084ade59"
+    "revision": "378e286eb48f0c08936b88f63239fb0c"
   },
   {
     "url": "images/icons/AEON144px.png",
@@ -51,19 +51,35 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "a9c04ef4f8c54a588bfa47531bf5dcc5"
+    "revision": "37bb475f38029c12efbbef86ccf281be"
   },
   {
     "url": "js/about.js",
     "revision": "7013eb3757c98291406bc968e948710a"
   },
   {
+    "url": "js/bootstrap.min.js",
+    "revision": "eb5fac582a82f296aeb74900b01a2fa3"
+  },
+  {
     "url": "js/bundle.js",
     "revision": "053255a2c558c7c46c538a8bfc9c7cb0"
   },
   {
+    "url": "js/fontawesome.js",
+    "revision": "d179b64ca38524da0d5cd0ea1e9051df"
+  },
+  {
     "url": "js/init.js",
     "revision": "48a427c2e7809031a60c1f1c121d6623"
+  },
+  {
+    "url": "js/jquery-3.2.1.min.js",
+    "revision": "c9f5aeeca3ad37bf2aa006139b935f0a"
+  },
+  {
+    "url": "js/popper.min.js",
+    "revision": "83fb8c4d9199dce0224da0206423106f"
   },
   {
     "url": "js/workbox-sw.js",
@@ -71,7 +87,11 @@ if (workbox) {
   },
   {
     "url": "layout.html",
-    "revision": "a5a1496ff9c0c8c6a4c4e516a142de49"
+    "revision": "fb799e7c2916f8f732d80a117a5a7e02"
+  },
+  {
+    "url": "stylesheets/bootstrap.min.css",
+    "revision": "a7022c6fa83d91db67738d6e3cd3252d"
   },
   {
     "url": "stylesheets/klodikeStyle.css",
@@ -81,9 +101,6 @@ if (workbox) {
  
   /**
    * For third party sites:*/
-  workbox.routing.registerRoute(new RegExp('^https://unpkg.com/(.*)'),
-   workbox.strategies.staleWhileRevalidate(),
-  );
   
   workbox.routing.registerRoute(new RegExp('^https://use.fontawesome.com/releases/(.*)'),
    workbox.strategies.cacheFirst(),
@@ -92,20 +109,7 @@ if (workbox) {
   workbox.routing.registerRoute(new RegExp('^https://fonts.gstatic.com/(.*)'),
     workbox.strategies.cacheFirst(),
   );
-
-  workbox.routing.registerRoute(new RegExp('^https://code.jquery.com/(.*)'),
-    workbox.strategies.staleWhileRevalidate(),
-  );    
   
-  workbox.routing.registerRoute(new RegExp('^https://stackpath.bootstrapcdn.com/bootstrap/(.*)'),
-    workbox.strategies.staleWhileRevalidate(),
-  );
-
-
-  workbox.routing.registerRoute(new RegExp('^https://cdnjs.cloudflare.com/ajax/libs/(.*)'),
-    workbox.strategies.staleWhileRevalidate(),
-  );
-
   workbox.routing.registerRoute(new RegExp('^https://dev.yellowfortyfour.com:3010/'),
     workbox.strategies.staleWhileRevalidate()
   );
