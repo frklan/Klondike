@@ -43,7 +43,7 @@ if (workbox) {
   },
   {
     "url": "help.html",
-    "revision": "378e286eb48f0c08936b88f63239fb0c"
+    "revision": "ced1b8376a7983ffa6c707b8b7b60536"
   },
   {
     "url": "images/icons/AEON144px.png",
@@ -51,7 +51,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "37bb475f38029c12efbbef86ccf281be"
+    "revision": "f06a534335c3abde7a1eab5b48831429"
   },
   {
     "url": "js/about.js",
@@ -87,7 +87,7 @@ if (workbox) {
   },
   {
     "url": "layout.html",
-    "revision": "fb799e7c2916f8f732d80a117a5a7e02"
+    "revision": "f9d39551594e6e6525c7d655ff4edfe2"
   },
   {
     "url": "stylesheets/bootstrap.min.css",
