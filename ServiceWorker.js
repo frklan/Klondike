@@ -110,11 +110,6 @@ if (workbox) {
     workbox.strategies.cacheFirst(),
   );
   
-  workbox.routing.registerRoute(new RegExp('^https://dev.yellowfortyfour.com:3010/'),
-    workbox.strategies.staleWhileRevalidate()
-  );
-
-
 } else {
   console.log('Workbox didn\'t load 😬');
 }
